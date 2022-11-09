@@ -1,0 +1,3 @@
+calcularNumMinas(x,y){
+    
+}
