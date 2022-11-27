@@ -28,3 +28,9 @@ if (comprobar==true){
 else{
     console.log("El modulo que ha introducido se encuentra en el map")
 }
+
+let a =new Set([
+
+    ["Ganadores"],
+]
+)
