@@ -40,6 +40,24 @@ function buscarProducto(){
 }
 
 
+/*let data={}
+data.nombre="Cacahuetes"
+data.descripcion="Descripcion Cacahuetes"
+
+*/
+function insertarProducto(){
+servicioDatosProducto.create(JSON.stringify(nombreProducto.value))
+    .then(response => {
+       alert("Ha insertado correctamente el elemento")
+
+        
+        })
+    .catch((e) => {
+        alert("Error al insertar");
+        });
+    
+
+    }
 
 
 
@@ -52,13 +70,15 @@ onMounted( ()=>{
 <template>
     <input type="text" placeholder="Producto a buscar" v-model="nombreProducto">
     <button type="button" @click="buscarProducto">buscar</button>
+    <button type="button" @click="insertarProducto">Insertar</button>
+
     <h4>Lista de Productos</h4>
         <ul>
             <li v-for="(producto,id) in productos" :key="id">{{ producto.nombre }}</li>
         </ul>
 
      <button type="button" @click="obtenerProductos">ListarTdos</button>
-
+    
     
 </template>
 
