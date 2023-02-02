@@ -1,0 +1,44 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "producto1",
+      "fecha": "21/05/2023",
+      "descripcion": "Descripcion producto 1"
+    },
+    {
+      "id": 2,
+      "nombre": "producto2",
+      "fecha": "22/05/2023",
+      "descripcion": "Descripcion producto 2"
+    },
+    {
+      "id": 3,
+      "nombre": "producto3",
+      "fecha": "23/05/2023",
+      "descripcion": "Descripcion producto 3"
+    },
+    {
+      "id": 4,
+      "nombre": "producto4",
+      "fecha": "24/05/2023",
+      "descripcion": "Descripcion producto 4"
+    },
+    {
+      "id": 5,
+      "nombre": "producto5",
+      "fecha": "25/05/2023",
+      "descripcion": "Descripcion producto 5"
+    },
+    {
+      "nombre": "afsa",
+      "descripcion": "fas",
+      "id": 6
+    },
+    {
+      "nombre": "german",
+      "descripcion": "German",
+      "id": 7
+    }
+  ]
+}
