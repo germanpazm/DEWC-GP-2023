@@ -7,13 +7,14 @@ import barramenu from './components/menu.vue'
 
 <template>
 <header>
-  <barramenu titulo="MenuPrincipal" :links="['inicio','listar','autor']"/>
-  <RouterView/>
+  <!---<barramenu titulo="MenuPrincipal" :links="['ejemplo1','ejemplo2','ejemplo3','ejemplo4']"/>-->
 
-  <cabecera titulo="App Vue" autor="Esta web es desarrollado por Germán Paz"/>
+  <cabecera titulo="App Vue" autor="Esta web es desarrollada por Germán Paz"/>
 </header>
 <main>
-<cuerpo/>
+  <RouterView/>
+  <cuerpo/>
+
 </main>
 
 </template>

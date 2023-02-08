@@ -1,31 +1,37 @@
 import { createRouter, createWebHistory } from "vue-router";
-import paginaInicio from "@/paginas/paginaInicio.vue";
-import paginaListar from "@/paginas/paginaListar.vue";
-import paginaAutor from "@/paginas/paginaAutor.vue";
+import ejemplo1 from "@/paginas/ejemplo1.vue";
+import ejemplo2 from "@/paginas/ejemplo2.vue";
+import ejemplo3 from "@/paginas/ejemplo3.vue";
+import ejemplo4 from "@/paginas/ejemplo4.vue"
 
 
 const router = createRouter({
     history: createWebHistory (import.meta.env.BASE_URL),
     routes: [
         //Públicas
-        {   path: '/', 
-            name:'inicio',
-            component: paginaInicio
+        {   path: '/ejemplo1', 
+            name:'ejemplo1',
+            component: ejemplo1
         },  
-        {   path: '/listado', 
-            name:'listar',
-            component: paginaListar
+        {   path: '/ejemplo2', 
+            name:'ejemplo2',
+            component: ejemplo2
         },   
-        {   path: '/autor', 
-            name:'autor',
-            component: paginaAutor
+        {   path: '/ejemplo3', 
+            name:'ejemplo3',
+            component: ejemplo3
         },    
+        {
+            path:'/ejemplo4',
+            name:'ejemplo4',
+            component:ejemplo4
+        },
  
 
         //Si se produce un error
         {
             path: '/:pathMatch(.*)*',
-            redirect:() => ({ name:'inicio'})
+            redirect:() => ({ name:'ejemplo1'})
         }
     ]
 
