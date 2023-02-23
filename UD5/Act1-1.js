@@ -3,7 +3,7 @@ function numeroAleatorio(min,max){
 }
 
 function CambiarColor(e){
-    console.log(e.target.textContent);
+    console.log("Has pulsado sobre un boton que tiene el siguiente nombre:"+e.target.textContent);
     if(e.target.type =="submit"){
         document.body.style.background=`rgb(${numeroAleatorio(0,255)},${numeroAleatorio(0,255)},${numeroAleatorio(0,255)})`;
         console.log("color aleatorio");
